@@ -1,5 +1,7 @@
 package ObjectsAndClasses;
 
+import java.util.Date;
+
 public class Classes {
     public static void main(String[] args) {
         agregationExample();
@@ -9,7 +11,11 @@ public class Classes {
     public static void agregationExample() {
           Account account = new Account("John", 1000);
           Order order = new Order("Buy op", account);
-          System.out.println(order.getAccount().getOwner());
+          System.out.println(order.getCreated());
+
+          //static field and static method in class
+          String bank = Account.bank;
+          String bank1 = Account.getBank();
     }
 
 }
@@ -21,10 +27,12 @@ public class Classes {
 class Order {
     private String name;
     private Account account;
+    private Date created;
 
     public Order(String name, Account account) {
         this.name = name;
         this.account = account;
+        this.created = new Date();
     }
 
     public String getName() {
@@ -34,11 +42,17 @@ class Order {
     public Account getAccount() {
         return account;
     }
+
+    public Date getCreated() {
+        return created;
+    }
+
 }
 
 class Account {
     private String owner;
     private long id;
+    public static final String bank = "Santander";
 
     public Account(String owner, long id) {
         this.owner = owner;
@@ -49,6 +63,9 @@ class Account {
     }
     public long id() {
         return id;
+    }
+    public static String getBank(){
+        return bank;
     }
 }
 
