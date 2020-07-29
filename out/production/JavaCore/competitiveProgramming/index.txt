@@ -1,0 +1,51 @@
+
+2. DATA STRUCTURES AND LIBRARIES
+
+
+
+LINEAR DS
+
+
+-STATIC ARRAY
+
+-DYNAMICALLY-RESIZABLE ARRAY
+           -ArrayList
+           -Vector
+
+-ARRAY OF BOOLEANS
+           -BitSet
+
+-BITMASKS
+
+-LINKED LIST
+     -LinkedList
+
+-STACK
+     -Stack
+
+-QUEUE
+     -Queue
+
+-DEQUE
+     -Deque
+
+
+NON-LINEAR DS
+
+-BALANCED BINARY SEARCH TREE
+      -TreeMap/TreeSet
+
+-HEAP
+     -PriorityQueu
+
+-HASH TABLE
+     -HashMap/HashSet/HashTable
+
+
+DS WITH OWN LIBRARIES
+
+-GRAPH
+-UNION-FIND DISJOINT SETS
+-SEGMENT TREE
+-BINARY INDEXED (FENWICK) TREE
+
